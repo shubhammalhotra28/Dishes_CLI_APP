@@ -1,0 +1,3 @@
+DISHES APPLICATION (CLI)
+***********************
+MINIMUM VIABLE PRODUCT
