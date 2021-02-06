@@ -14,7 +14,7 @@ class inputHandler:
             userChoice = input('Tell me what shall i do ? \n'+
                                'add dish\n'
                                + 'delete dish\n'
-                               + 'view dishes').lower()
+                               + 'view dishes\n').lower()
 
         userChoice = ourChoices[0] if not userChoice else userChoice
 
