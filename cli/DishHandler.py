@@ -1,15 +1,5 @@
-# import Dish
 
-'''
-
-Assumptions for class Dish :
-    1) Each Dish will be having a valid name
-'''
-
-class Dish:
-
-    def __init__(self,name):
-        self.name = name
+from .Dish import Dish
 
 '''
 Assumptions for Solution :
@@ -32,15 +22,24 @@ class Solution:
         dish = Dish(name)
         self.primary_key += 1
         self.dict[name] = self.primary_key
+        print(name,' dish added successfully')
+        return
 
 
     def viewAllDishes(self):
 
+        print('*'*50)
+        print('The list of dishes are as followed:')
+        print('*'*50)
+
         for i in self.dict:
             print(i,' ','primary_key = ',self.dict[i])
 
+        return
 
     def deleteDish(self,name):
+
+
 
         if name not in self.dict:
             print('dish name does not exist')
@@ -48,20 +47,5 @@ class Solution:
 
         del self.dict[name]
         self.primary_key -= 1
-
-s = Solution()
-s.addDish('fish')
-s.addDish('chicken')
-s.addDish('rajma chawal')
-print('*'*78)
-s.viewAllDishes()
-s.deleteDish('rajma chawal')
-print('*'*78)
-s.viewAllDishes()
-s.addDish('chicken')
-print('*'*78)
-s.viewAllDishes()
-s.deleteDish('rajma chawal')
-s.viewAllDishes()
-print('*'*78)
+        print(name,' dish removed successfully')
 
