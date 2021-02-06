@@ -1,5 +1,5 @@
 import sys
-from .DishHandler import Solution
+from .DishHandler import DishHandler
 from .inputHandler import inputHandler
 
 
@@ -7,7 +7,7 @@ def main():
 
     i = inputHandler()
 
-    pg = Solution()
+    pg = DishHandler()
 
     while True:
 

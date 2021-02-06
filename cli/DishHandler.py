@@ -7,7 +7,7 @@ Assumptions for Solution :
         a disctionary and an integer (primary_key) will be intialised 
 '''
 
-class Solution:
+class DishHandler:
 
     def __init__(self):
 

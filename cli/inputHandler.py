@@ -1,4 +1,3 @@
-from .DishHandler import Solution
 
 class inputHandler:
 
