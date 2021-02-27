@@ -4,7 +4,7 @@ MINIMUM VIABLE PRODUCT
 
 To run the program:
 ************************
-1) Fromt he root directory, run the command cli
+1) From the root directory, run the command cli
 
 2) This will run the cli, treating it as a package, which will handle the functionalities in all together
 
