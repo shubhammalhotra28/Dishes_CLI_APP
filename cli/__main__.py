@@ -4,28 +4,36 @@ from .inputHandler import inputHandler
 
 
 def main():
-
+    """
+    handles the input and performs the necessary taks, required
+    :return:
+    """
     i = inputHandler()
 
     pg = DishHandler()
 
     while True:
 
-        userChoice, name = i.input()
+        userChoice, name,indegrents = i.input()
 
-        if userChoice == 'add dish' and name is not None:
+        if userChoice == 1 and name is not None and indegrents is not None:
 
-            pg.addDish(name)
+            pg.addDish(name,indegrents)
 
-        elif userChoice == 'delete dish' and name is not None:
+        elif userChoice == 2 and name is not None:
 
             pg.deleteDish(name)
 
-        elif userChoice == 'view dishes' and name is None:
+        elif userChoice == 3 and name == -1:
 
             pg.viewAllDishes()
 
-        elif userChoice == '-1' or name == '-1':
+        elif userChoice == 4 and name == None and indegrents is not None:
+
+            s = pg.dishesCanBeMAde(indegrents)
+            pg.viewDishesHelper(s)
+
+        elif userChoice == -1 and name == -1:
 
             print('*' * 50)
 

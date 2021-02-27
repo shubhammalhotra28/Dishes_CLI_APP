@@ -6,6 +6,13 @@ Assumptions for class Dish :
 
 
 class Dish:
-
-    def __init__(self,name):
+    __slots__ = "name", "id","indegrents"
+    def __init__(self,name, id,indegrents):
+        """
+        constructor
+        :param name: string
+        :param id: int
+        """
+        self.id = id
         self.name = name
+        self.indegrents = indegrents
